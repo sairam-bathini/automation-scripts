@@ -4,12 +4,13 @@
 #Author: Sairam Bathini
 #Date: 30-09-2023
 #Version: v1
-#This script is used to print the greeting by including the user input
+#This script is used to print YES or NO based on the input such as if input is y/Y then output YES, viceversa
 ###########
 
-# Read user input into a variable named 'name'
-read name
+read -p 1 i
 
-# Display a greeting with the provided name
-echo "Welcome $name"
-
+if [[ "$i" == 'Y' || "$i" == 'y' ]]; then
+    echo "YES"
+else 
+    echo "NO"
+fi
